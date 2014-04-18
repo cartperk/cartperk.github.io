@@ -134,6 +134,12 @@
 		<hr class="footerbreak"/>
 	</section>
 	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>		
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		var currentHash = window.location.hash;
+		if (currentHash=="#from-app") {
+		   $('.navbar').hide();
+		}
+	</script>
 </body>
 </html>
