@@ -14,6 +14,17 @@ $(window).load(function () {
 	$('header .carousel-nexus').addClass("animated fadeInLeft");
 });
 
+// Carousel swipe functionality 
+$(document).ready(function() {  
+		 $(".carousel").swiperight(function() {  
+		  $(this).carousel('prev');  
+    		});  
+	   $(".carousel").swipeleft(function() {  
+	      $(this).carousel('next');  
+   });  
+});  
+
+
 // Fixed navbar
 $(window).scroll(function () {
 

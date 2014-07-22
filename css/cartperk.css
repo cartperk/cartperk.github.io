@@ -1,17 +1,3 @@
-/* 
-
-
-    _/                                  _/            
-   _/          _/_/_/  _/_/_/      _/_/_/  _/    _/   
-  _/        _/    _/  _/    _/  _/    _/  _/    _/    
- _/        _/    _/  _/    _/  _/    _/  _/    _/     
-_/_/_/_/    _/_/_/  _/    _/    _/_/_/    _/_/_/      
-                                             _/       
-                                        _/_/          
-                                                 
-											   V 1.0                                  
-                                  													 
-                                  													 */
 @import "animate.min.css";
 
 /*-----------------------------------------------------------------------------------*/
@@ -22,8 +8,8 @@ body{
 	text-align: center;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	font-size: 24px;
 	color: #373737;
+	font-size: 18px;
 }
 
 h1,h2,.h1,.h2 {
@@ -37,12 +23,11 @@ h3,.h3 {
 
 h4 {
 	font-weight: 400;
-	font-size: 56px;	
 }
 
 p{
-	font-size: 24px;
 	color: #373737;
+	font-size: 18px;
 }
 
 .lead{
@@ -69,7 +54,6 @@ button {
 	text-align: center;
 	white-space: nowrap;
 	font-weight: normal;
-	font-size: 14px;
 	line-height: 1.428571429;
 	cursor: pointer;
 	-webkit-user-select: none;
@@ -85,13 +69,6 @@ button {
 
 .animated{
 	visibility: visible!important;
-}
-
-.image-left {
-   max-width: 100%;
-   float: left !important;
-   margin-left: 0px !important;
-   margin-right: 30px !important;
 }
 
 .content {
@@ -119,7 +96,6 @@ header h1,
 .detail .carousel-indicators .active {
 	background: #f1484f;	
 }
-	
 
 /*-----------------------------------------------------------------------------------*/
 /* NAVBAR
@@ -170,8 +146,7 @@ nav.navbar.fixed-to-top{
 
 .navbar-default .navbar-brand{
 	color: #ffffff;
-	font-weight: 600;
-	font-size: 30px;
+	font-weight: 600;	
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
@@ -196,7 +171,7 @@ nav.navbar.fixed-to-top{
 /*-----------------------------------------------------------------------------------*/
 
 header{
-	padding: 150px 0px 0px 0px;
+	padding: 50px 0px 0px 0px;
 	background: url('../img/homepage-photo.jpg');
 	background-size: cover;
 	background-position:center; 
@@ -206,24 +181,33 @@ header{
 }
 
 header h1{
+	font-size: 60px;
 	font-weight: 500;
-	font-size: 100px;
-	text-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+	text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+header, .social{
+	background-position-y: 0px;
 }
 
 header h2.lead{
+	font-size: 30px;
 	font-weight: 400;
-	font-size: 32px;
-	text-shadow: 3px 3px 1px rgba(0,0,0,0.6);
+	text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
 }
 
+.nexus-img {
+	height: 500px;
+}
 
 .carousel-nexus{
+	display: block;
 	margin-right: auto;
 	margin-left: auto;
-	width: 360px;
-	height: 640px;
-	background: url('../img/googlenexus.png') no-repeat center top;
+}
+
+.center-img{
+	margin: 0 auto;
 }
 
 .carousel-nexus-inner{
@@ -273,6 +257,14 @@ header .carousel-indicators li {
 	background: url(../img/googleplaystore.png) no-repeat;
 }
 
+.download {
+	margin-top: 10px;
+}
+
+.download .img-responsive {
+	margin: 0 auto;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /* Intro 
 /*-----------------------------------------------------------------------------------*/
@@ -287,13 +279,12 @@ header .carousel-indicators li {
 }
 
 .heading{
-	font-size: 34px; 
 	color: #f1484f;
 	font-weight: 400;
+	font-size: 18px
 }
 
 .info {
-	font-size: 24px; 
 	color: #373737;
 }
 
@@ -301,16 +292,19 @@ header .carousel-indicators li {
 	font-family: 'Montserrat Alternates', sans-serif;
 	font-weight: 400;
 	color: #56C8A1;
-	font-size: 48px;	
 }
 
 .pageheading {
 	text-align: left;
 	font-family: 'Montserrat Alternates', sans-serif;
 	font-weight: 400;
-	color: #56C8A1;
-	font-size: 48px;	
+	color: #56C8A1;	
+	font-size: 24px;
 }
+
+/*-----------------------------------------------------------------------------------*/
+/* Detail
+/*-----------------------------------------------------------------------------------*/
 
 .howitworks {
 	padding-top: 30px;
@@ -321,15 +315,15 @@ header .carousel-indicators li {
 	margin-top: 5%;
 }
 
+.detail p{
+	margin-bottom: 60px;
+}
+
 .detail .app-screenshot{
 	overflow: hidden;
 	overflow: hidden;
 	margin-right: auto;
 	margin-left: auto;
-	width: 360px;
-	height: 450px;
-	background: url('../img/googlenexus.png') no-repeat;
-	padding: 61px 0px 0px 7px;
 }
 
 .detail .app-screenshot img{
@@ -390,7 +384,6 @@ header .carousel-indicators li {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	color: #373737;
-	font-size: 16px;
 }
 
 .brand-detail {
@@ -404,21 +397,18 @@ header .carousel-indicators li {
 .brandfeatureheading {
 	font-family: 'Montserrat Alternates', sans-serif;
 	font-weight: 400;
-	color: #f1484f;
-	font-size: 26px;	
+	color: #f1484f;	
 }
 
 .brandfeaturelead {
 	font-family: 'Montserrat Alternates', sans-serif;
-	font-weight: 400;
-	font-size: 32px;	
+	font-weight: 400;	
 	color: #f1484f;
 
 }-
 
 .teamname {
 	font-weight: 400;
-	font-size: 24px;
 	margin-top: 10px;
 }
 
@@ -426,7 +416,6 @@ header .carousel-indicators li {
 	font-family: 'Montserrat Alternates', sans-serif;
 	font-weight: 400;
 	color: #f1484f;
-	font-size: 54px;
 	vertical-align: center;
 }
 
@@ -442,28 +431,23 @@ header .carousel-indicators li {
 .legalsection .heading {
 	font-family: 'Montserrat Alternates', sans-serif;
 	font-weight: 400;
-	color: #f1484f;
-	font-size: 26px;	
+	color: #f1484f;	
 }
 
 .legalpage p {
-	font-size: 20px;
 }
 
 .legalpage ul {
-	font-size: 20px;
 }
 
 .headingdate {
 	font-family: 'Montserrat Alternates', sans-serif;
 	font-weight: 400;
 	color: #000000;
-	font-size: 26px;
 	text-align: right;
 }
 
 .footer .nav li {
-	font-size: 16px;
 } 
 
 
@@ -471,110 +455,90 @@ header .carousel-indicators li {
 /*	MEDIA QUERIES
 /*-----------------------------------------------------------------------------------*/
 
-@media (max-width:768px) {
-	
-.navbar-nav {
-	float: left;
-	text-align: left;
+@media (min-width:768px) {
+	.image-left {
+	   max-width: 100%;
+	   float: left !important;
+	   margin-left: 0px !important;
+	   margin-right: 30px !important;
+	}	
 }
 
-.download {
-	margin-top: 10px;
-}
-
-.download .img-responsive {
-	margin: 0 auto;
-}
-
-	
-}
-
-@media (max-width:992px) {
-
-
-.detail .carousel h1, .detail p{
-	text-align: center;
-}
-
-.detail p{
-		margin-bottom: 60px;
-}
-
-header, .social{
-	background-position-y: 0px;
-}
-
-header h2.lead{
-	font-size: 30px;
-	text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
-}
-
-.intro-detail .heading{
-	font-size: 30px; 
-	color: #f1484f;
-	font-weight: 400;
-}
-
-.intro-detail p {
-	font-size: 22px; 
-	color: #373737;
-}
-
-.payoff{
-	padding-top: 50px;
-	padding-bottom: 50px;
-	min-height: 200px;
-}
-
-.payoff h1{
-	font-size: 24px;
-}
-
-.features .col-md-4{
-	margin-bottom: 60px;
-}
+@media (max-width: 768px) {
+	.navbar-nav {
+		float: left;
+		text-align: left;
+	}
 
 }
 
-@media (min-width: 480px) {
+@media (min-width: 992px) {
+	h1,.h1 {
+		font-size: 42px;
+	}
+
+	h2,.h2 {
+		font-size: 36px;
+	}
+
+	h3,.h3 {
+		font-size: 30px
+	}
+
+	h4 {
+		font-size: 24px;
+	}
+
+	p{
+		font-size: 18px;
+	}
+
+	button{
+		font-size: 18px;
+	}
+
+	.brand {
+		font-size: 90px;
+	}
+
+	header h1{
+		font-size: 70px;
+		font-weight: 500;
+		text-shadow: 4px 4px 3px rgba(0,0,0,0.6);
+	}
+
+	header h2.lead {
+		font-weight: 400;
+		font-size: 30px;
+		text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+	}
+
 	.rwd-line {
 		display: inline;
 	}
-}
 
-@media (max-width:480px){
-
-	
-	header{
-			padding-bottom: 0px;
-	}
-	
-	header h1{
-		font-size: 70px;
-	}
-	
-	.purchase{
-		padding-top: 50px;
-	}
-	
-	.features col-md-4{
-		margin-bottom: 50px;
-	}
-	
-}
-
-@media (min-width: 768px) {
 	.download {
 		float: right !important;
 		margin-top: 400px;
 	}
-}
 
-@media (min-width: 992px) {
 	.detail .info {
 		padding-top: 100px;
 	}
+
+	.pageheading {
+		font-size: 48px;
+	}
+
+	.heading {
+		font-size: 24px;
+	}
+
+	.sectionheading {
+		font-size: 48px;
+	}
 }
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
     /* Retina-specific stuff here */
     .purchasebutton.app-store, .get-it button.app-store{
